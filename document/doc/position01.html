@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 01</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/position.css">
+</head>
+
+<body>
+    <main>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, cum?
+    </main>
+    <div class="popup"><button>close</button></div>
+    <!--자바스크립트 주요 이벤트 클릭 휠 스크롤-->
+    <script>
+        document.querySelector('.popup button').addEventListener('click', function () {
+            console.log('바부팅');
+            document.querySelector('.popup').style.display = 'none';
+        })
+    </script>
+
+</body>
+
+</html>
