@@ -140,3 +140,40 @@ body {
     font-weight: 300;
     line-height: 1.4;
 }
+
+.main_visual figure {
+    height: 30rem;
+}
+
+.main_visual .item01 {
+    background: url(../img/main_bg01.jpg) no-repeat center center/100%
+}
+
+.main_visual .item01.on {
+    background: url(../img/main_bg01.jpg) no-repeat center center/150%;
+    transition: 2s;
+}
+
+.main_visual .item02 {
+    background: url(../img/main_bg02.jpg) no-repeat center center/100%
+}
+
+.main_visual .item02.on {
+    background: url(../img/main_bg02.jpg) no-repeat center center/150%;
+    transition: 2s;
+}
+
+.main_visual .item03 {
+    background: url(../img/main_bg03.jpg) no-repeat center center/100%
+}
+
+.main_visual .item03.on {
+    background: url(../img/main_bg03.jpg) no-repeat center center/150%;
+    transition: 2s;
+}
+
+/*높이가 없으면 백그라운드 컬러 적용안됨. 백그라운드는 공간을 차지하지 않는다.*/
+/*css파일로부터의 경로를 넣어야함.*/
+/*cover는 배경 꽉 채우기 fixed까지 더하면 페럴렉스가 됨
+    , contain은 배경도 어떻게든 보여주기*/
+/*백그라운드 센터 공식: 배경색 이미지경로 노리핏 좌우로 센터 아래위로 센터/커버, 아이폰 sapari에서 안됨*/
