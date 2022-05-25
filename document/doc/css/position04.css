@@ -1,0 +1,33 @@
+body {
+    background: #333;
+}
+
+.sinbal {
+    padding: 100px 0;
+}
+
+.sinbal>.case {
+    position: relative;
+    width: 809px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sinbal .case ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0, -0.74, .89, 1.8);
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 40px;
+    color: #fff;
+
+
+}
