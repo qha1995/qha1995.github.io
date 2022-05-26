@@ -1,0 +1,60 @@
+body {
+    background: #fff;
+}
+
+.face {
+    position: absolute;
+    /*얘의 기준은 body
+    position: realative, absolute, fixed 모두 기준이 된다.*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: #333;
+    border-radius: 50%;
+}
+
+
+
+.face>li {
+    position: absolute;
+    /*얘의 기준은 ul의 absolute*/
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-top: 2px solid #ff0;
+    border-left: 2px solid #ff0;
+    transform: rotate(45deg);
+}
+
+.face.active>li {
+    transform: rotate(225deg);
+}
+
+.face>li:nth-child(1) {
+    top: 200px;
+    left: 100px;
+}
+
+.face>li:nth-child(2) {
+    top: 200px;
+    right: 100px;
+
+}
+
+.face>li:nth-child(3) {
+    bottom: 100px;
+    left: 225px;
+}
+
+.top_banner .container {
+    height: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.top_banner .container.active {
+    height: 0;
+    overflow: hidden;
+}
