@@ -143,5 +143,6 @@
 .main_visual .main_slider figure.xx a {
     transform: translateY(0);
     opacity: 1;
-    transition: 0.5s 1s;
+    transition: opacity 0.5s 1s;
+    transform: 0.5s 1s;
 }
