@@ -81,12 +81,18 @@
             background: #a5a5a5;
             vertical-align: middle;
             margin: 0 0 0 10px;
+
         }
 
+        /*transform은 블록 레벨이어야 적용이 된다.*/
         .psd04 h2::after {
             content: "\e907";
             font-family: xeicon !important;
+            display: inline-block;
+            transform: rotate(180deg);
+
         }
+
 
         .dot_list {
             width: 300px;
@@ -136,16 +142,37 @@
 
         }
 
+
         .psd06 h2::after {
+
             content: "";
             display: block;
-            width: 30px;
-            height: 40px;
-            background: #369;
+            width: 35px;
+            height: 50px;
+            background: rgb(85, 44, 7);
             margin: 20px auto;
-            border-radius: 50% 0;
-            transform: rotate(15deg);
+            border-radius: 90% 100%;
+            transform: rotate(45deg);
         }
+
+
+        .psd06 h2 {
+            position: relative;
+        }
+
+        .psd06 h2::before {
+            content: "";
+            position: absolute;
+            top: 75px;
+            left: 50%;
+            width: 25px;
+            height: 2px;
+            background: rgb(255, 255, 255);
+            transform: translateX(-50%) rotate(135deg);
+            z-index: 999;
+        }
+
+
 
         hr.list_hr {
             position: relative;
@@ -303,7 +330,7 @@
 
 
     <section class="psd06">
-        <h2><i class="xi-arrow-right"></i>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nulla sequi cumque possimus tenetur id
             praesentium reprehenderit quidem illo.</p>
         <div class="container">
