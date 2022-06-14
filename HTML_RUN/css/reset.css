@@ -8,6 +8,7 @@
     font-size: inherit;
     font-weight: inherit;
     box-sizing: border-box;
+
 }
 
 a {
@@ -24,9 +25,12 @@ body {
     line-height: 1;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: normal;
+
+
 }
 
 img {
 
     vertical-align: middle;
+    max-width: 100%;
 }
