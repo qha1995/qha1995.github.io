@@ -95,6 +95,12 @@ $(function () {
         }
     });
 
-
+    $('#f1').on('change', function () {
+        console.log($(this), $(this).val())
+        var lnk = $(this).val();
+        if (lnk) {
+            window.open(lnk);
+        }
+    });
 
 })
