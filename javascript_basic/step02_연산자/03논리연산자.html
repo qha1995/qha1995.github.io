@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자-3 - 논리연산자</title>
+</head>
+
+<body>
+    <script>
+        let 참 = true;
+        let 거짓 = false;
+        const a = '최보민'
+        console.log(참, 거짓);
+        console.log(!참, !거짓); // ! NOT 부정연산자.
+        console.log(참 && 거짓, 참 && 참, 거짓 && 거짓) //AND 연산자. 하나라도 거짓이면 거짓 
+        console.log(거짓 || 참, 거짓 || 거짓)//OR 연산자. 참이 나올 때까지 찾아서 하나라도 참이면 참. 참이 나오면 뒤는 판별 안함.
+
+        a ? console.log(a + ' 진실한 너') : console.log('못된 놈')//a가 트루일 때 진실한 너를 보여주고 a가 펄스이면 못된 놈을 보여줘. 공간이 없으면 거짓, 공간이 있으면 참. 문자가 있으면 참.
+
+
+        if (!a) {
+            console.log(a + ' 진실한 너')
+        } else {
+            console.log('못된 놈')
+        }//    a && console.log(a + ' 진실한 너'); 와 같은건데 if를 못써서 리액트에서 &&을 쓴다.
+
+        a && console.log(a + ' 진실한 너');
+
+        if (!a) {
+            console.log(a + ' 진실한 너')
+        }
+
+        !a || console.log('못된 놈');//참 나오면 뒤에 껀 판별 안함. 
+
+
+
+    </script>
+
+</body>
+
+</html>
