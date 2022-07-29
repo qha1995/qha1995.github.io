@@ -770,6 +770,9 @@
     flex: 1;
 }
 
+.video .fly .inner ul li:nth-child(2) {
+    font-weight: 400;
+}
 
 
 
