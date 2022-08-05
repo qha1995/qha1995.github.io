@@ -595,11 +595,11 @@ body {
     /* flex: 0 0 50%; */
     color: #333;
     border: 1px solid #bbb;
-    padding: 67px 80px;
+    padding: 80px 80px;
     /* height: 48vh; */
     height: 48vh;
     text-align: center;
-    transform: translate(240px, 160px);
+    transform: translate(240px, 165px);
     /* 240px, 150px */
 }
 
