@@ -1,7 +1,7 @@
 $(function () {//메인 슬라이드
     var mainSlider = $(".visual-slider").slick({
         arrows: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         pauseOnHover: false,
         pauseOnFocus: false,
