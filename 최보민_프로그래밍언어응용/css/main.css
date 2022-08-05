@@ -607,9 +607,9 @@ body {
     position: absolute;
     content: "";
     width: 960px;
-    height: 748px;
+    height: 795px;
     inset: 50% 0 0 50%;
-    transform: translate(480px, -374px);
+    transform: translate(480px, -398px);
     background: #f1f1f1;
 
 }
