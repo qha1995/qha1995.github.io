@@ -1,0 +1,2267 @@
+  * {
+      outline: 1px solid --#f00;
+  }
+
+  html {
+      font-size: 10px;
+  }
+
+  body {
+      font-size: 1.6rem;
+      letter-spacing: -0.025rem;
+  }
+
+
+
+  .Wrapper {}
+
+  .mc {
+      color: #ed3124;
+  }
+
+  .container {
+      display: flex;
+      width: 120rem;
+      margin: 0 auto;
+  }
+
+  .btn {
+      display: inline-block;
+      border: 1px solid #ddd;
+      padding: 1rem 2rem;
+      color: #ddd;
+      font-size: 1.2rem;
+      transition: 0.5s;
+  }
+
+  .btn:hover {
+      display: inline-block;
+      border: 1px solid #ed3124;
+      padding: 1rem 2rem;
+      color: #ed3124;
+      font-size: 1.2rem;
+  }
+
+  .btn i {
+      font-size: 0.8rem;
+      margin: 0 0 0 1rem;
+  }
+
+  .sec {
+      padding: 10rem 0;
+  }
+
+  .sec h2 {
+
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 2rem 0;
+
+
+  }
+
+
+  .sec h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-align: center;
+      margin: 0 0 0.2rem 0;
+  }
+
+  .sec p {
+
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-align: center;
+      margin: 0 0 4rem 0;
+  }
+
+
+  .tit {
+      position: relative;
+      font-size: 1.9rem;
+      font-weight: 700;
+      margin: 0 0 1rem 0;
+      color: #fff;
+
+  }
+
+
+
+  .dec {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 0 0 4rem 0;
+      line-height: 1.5;
+      color: #ddd;
+  }
+
+
+
+  .TopBanner {
+
+      background: #000;
+      color: #ddd;
+
+  }
+
+  .TopBanner.on {
+      display: none;
+  }
+
+  .TopBanner img {
+      transform: translateX(10rem);
+  }
+
+
+  .TopBanner .container {
+      display: block;
+      position: relative;
+  }
+
+  /* .TopBanner h2 {
+     color: #ddd;
+     font-size: 2.5rem;
+     font-weight: 700;
+     margin: 0 0 1rem 0;
+ }
+
+ .TopBanner p {
+     color: #ddd;
+     font-size: 1.3rem;
+     font-weight: 300;
+ } */
+
+  .TopBanner a {
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.2rem 2rem 0.5rem 2rem;
+      transform: translateY(2rem);
+      margin: 0 0 0 10rem;
+      font-family: 100;
+      font-size: 1.3rem;
+  }
+
+  .TopBanner i {
+      color: #ddd;
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      cursor: pointer;
+  }
+
+  .h_b {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 99;
+      height: 8rem;
+  }
+
+  .Header {
+      color: #fff;
+      line-height: 8rem;
+  }
+
+
+
+  .SubMenu {
+      height: 5rem;
+      font-size: 1.5rem;
+      justify-content: space-between;
+
+
+  }
+
+  .SubMenu ul {
+      font-size: 1.3rem;
+      font-weight: 300;
+      display: flex;
+      gap: 3rem
+  }
+
+  /* 로고가 미세하게 내려오는 것은 폰트사이즈 0을 주면 해결된다. */
+
+  .Gnb {
+      color: #fff;
+      margin: 0 0 0 auto;
+      border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+  }
+
+  .Gnb .container {
+      justify-content: space-between;
+      font-size: 2.1rem;
+      text-shadow: 0 0 0.3rem #000;
+      font-weight: 400;
+
+  }
+
+  .Gnb .right ul {
+      display: flex;
+      gap: 3rem;
+
+  }
+
+  .Gnb .left ul {
+      display: flex;
+      gap: 3rem;
+
+  }
+
+  h1 {
+      width: 15rem;
+      font-size: 0;
+      transform: translate(30%, -30%);
+  }
+
+  .Gnb a {
+      display: block;
+  }
+
+
+
+  .Gnb>ul {
+      gap: 3rem;
+      display: flex;
+  }
+
+  .Gnb>ul>li {
+      position: relative;
+  }
+
+  .Gnb>ul>li~li::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -1.5rem;
+      width: 1px;
+      height: 1.2rem;
+      background: #ddd;
+      transform: translateY(-50%);
+
+  }
+
+  #searchForm {
+
+      margin: 0 0 0 2rem
+  }
+
+
+  #searchForm input[name='search'] {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+      background: transparent;
+      width: 10rem;
+      font-size: 1.5rem;
+      text-shadow: 0 0 0.3rem #000;
+
+  }
+
+  #searchForm input[name='search']::placeholder {
+      color: #fff;
+      font-size: 1.5rem;
+
+  }
+
+  #searchForm input[name='search']:focus::placeholder {
+      color: transparent
+  }
+
+  #searchForm button {
+      text-shadow: 0 0 0.3rem #000;
+      color: #fff;
+      outline: none;
+      border: none;
+      background: transparent;
+      font-size: 2.3rem;
+      cursor: pointer
+  }
+
+  .MainVisual {
+      position: relative;
+  }
+
+
+  .MainVisual .MainSlider figure {
+      height: 100vh;
+      /* object-fit: cover; */
+
+
+  }
+
+  .movie02 {
+      text-align: center;
+      color: #fff;
+
+  }
+
+  .movie02 i {
+      font-size: 3rem;
+
+  }
+
+  .MainSlider figure {
+      position: relative;
+      height: 100vh;
+  }
+
+  .MainSlider .itm01 {}
+
+  .MainSlider .itm02 {
+      background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+
+
+  }
+
+  .MainSlider .itm03 {}
+
+
+  .MainSlider .itm04 {
+      background: url(../img/mainvisual.jpg) no-repeat center top/cover;
+
+  }
+
+  .MainVisual .slogan {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -26%);
+      color: #fff
+  }
+
+
+
+  .MainVisual .slogan h2 {
+      font-size: 8rem;
+      font-weight: 900;
+
+      margin: 0 0 1.2rem 0;
+      text-indent: -0.5rem;
+  }
+
+  .MainVisual .slogan p {
+      font-size: 5rem;
+
+      margin: 0 0 3rem 0;
+      font-weight: 100;
+  }
+
+  .MainVisual .slogan a {
+      font-size: 2.5rem;
+      font-weight: 100;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.5rem 12rem 0.6rem 12rem;
+      border-radius: 30rem;
+
+  }
+
+
+
+  .MainSlider .slick-dots {
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+  }
+
+
+  .MainSlider .slick-dots li {
+      position: relative;
+      display: inline-block;
+      width: 4rem;
+      height: 0.4rem;
+      background: #333;
+      border-radius: 0.2rem;
+      margin: 0 0.2rem;
+      overflow: hidden;
+
+  }
+
+  .MainSlider .slick-dots li::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ed3124;
+      opacity: 0;
+  }
+
+  .MainSlider .slick-dots li.slick-active::after {
+      opacity: 1;
+      transition: 2s;
+  }
+
+  .MainVisual .slick-dots button {
+      display: none;
+  }
+
+  .MainArrow i {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 10rem;
+      transition: 0.5s;
+
+
+  }
+
+  .MainArrow i:hover {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(237, 49, 36);
+      font-size: 10rem;
+
+
+  }
+
+  .MainArrow i.on {
+      color: #ddd;
+  }
+
+  .MainArrow i:nth-child(1) {
+      margin: 0 0 0 -80rem;
+
+  }
+
+  .MainArrow i:nth-child(2) {
+      margin: 0 0 0 80rem;
+
+  }
+
+  .controls {
+      position: absolute;
+      bottom: 10rem;
+      left: 50%;
+      transform: translate(-52%, -50%);
+  }
+
+  .somovie {
+      width: 100%;
+      height: 100vh;
+      background: #000;
+      transform: scaleY(1.083);
+  }
+
+
+
+  .Product {
+      background: #000;
+      padding: 10rem 0;
+      color: #fff;
+
+  }
+
+  .Product .Office {}
+
+
+
+  .Product .Office ul {
+      color: #ddd;
+      justify-content: center;
+      display: flex;
+      gap: 3rem;
+      font-weight: 300;
+
+  }
+
+  .Product .Office ul li {
+      position: relative;
+  }
+
+  .Product .Office ul li:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0.8rem;
+      left: -1.5rem;
+      transform: translate(-50%, -50%);
+      width: 0.1rem;
+      height: 1rem;
+      background: #bbb;
+  }
+
+
+  .Now {
+      padding: 0 0 6rem 0;
+      position: relative;
+      color: #ddd;
+
+  }
+
+
+
+
+
+  .Now .ProductPic {
+      width: 120rem;
+      margin: 0 auto;
+      gap: 3rem;
+
+
+
+  }
+
+
+
+  .Now .ProductPic .Box {
+      border-radius: 1rem;
+      padding: 10rem 0 4rem 0;
+  }
+
+  .Now .ProductPic figure {
+      position: relative;
+      z-index: 999;
+      padding: 0 3rem;
+      flex: 1;
+
+
+
+
+
+
+  }
+
+  .Now .ProductPic figure img {
+      transform: translateX(0%);
+      border-radius: 1rem;
+      margin: 0 0 1rem 0;
+      transition: 0.5s;
+
+
+  }
+
+
+  .Now .ProductPic figure.slick-center img {
+
+      transform: scale(1.2);
+      transition: transform 0.5s;
+  }
+
+  .Now .ProductPic figure:hover img {
+      transform: scale(1.2);
+      filter: brightness(0.5);
+      cursor: pointer;
+
+  }
+
+
+  .Now .ProductPic figure span {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -150%);
+      font-size: 1.7rem;
+      font-weight: 100;
+      opacity: 0;
+      color: #FFF;
+      width: 25rem;
+      letter-spacing: 0.15rem;
+      height: 5rem;
+      cursor: pointer;
+      text-align: center;
+      line-height: 5rem;
+      z-index: 999;
+
+
+  }
+
+
+
+  .Now .ProductPic figure span::after {
+      position: absolute;
+      content: "";
+      width: 18rem;
+      height: 3rem;
+      inset: 50% 0 0 50%;
+      transform: translate(-50%, 3.5rem);
+      background: #fff;
+      /*border: 1px solid #fff;*/
+      opacity: 0.3;
+      border-radius: 3rem;
+
+
+  }
+
+  .Now .ProductPic figure:hover span {
+      opacity: 1;
+      transition: all 0.7s ease;
+
+  }
+
+  .Now .ProductPic .slick-dots {
+      text-align: center;
+      transform: translateY(250%);
+  }
+
+  .Now .ProductPic .slick-dots li {
+      display: inline-block;
+      margin: 0 0.2rem;
+  }
+
+  .Now .ProductPic .slick-dots li button {
+
+      border: none;
+      outline: none;
+      background: #ddd;
+      text-align: center;
+      vertical-align: top;
+      color: #000;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.2rem;
+      line-height: 1rem;
+
+
+  }
+
+  .Now .ProductPic .slick-dots li.slick-active button {
+      transition: 1s;
+      background: #ed3124
+  }
+
+  .Now .ProductArrows {
+      position: relative
+  }
+
+  .Now .ProductArrows i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      font-size: 3rem;
+      background: #ddd;
+      color: #000;
+      border-radius: 50%;
+      padding: 0.5rem;
+  }
+
+  .Now .ProductArrows i:nth-child(1) {
+      margin: 0 0 0 -54.5rem;
+  }
+
+  .Now .ProductArrows i:nth-child(2) {
+      margin: 0 0 0 54.5rem;
+  }
+
+
+  .Now .ProductPic figure h3 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+      color: #fff;
+
+  }
+
+  .Now .ProductPic figure p {
+      font-size: 1.1rem;
+      width: 20rem;
+      line-height: 2rem;
+  }
+
+  .Now h4 {
+      font-weight: 300;
+      font-size: 1.5rem;
+      position: relative;
+      text-align: center;
+      margin: 0 0 2rem 0;
+
+
+  }
+
+  .Now h4::after {
+      position: absolute;
+      content: "";
+      width: 27rem;
+      height: 0.3px;
+      inset: 170% 0 0 50%;
+      transform: translate(-50%, -50%);
+      background: #444;
+
+  }
+
+  .Now .Price strong {
+      font-family: xeicon;
+
+  }
+
+  .Now .Price ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 2rem 0;
+      font-weight: 300;
+      font-size: 1.3rem;
+
+  }
+
+  .Now .Price ul>li:nth-child(2) {
+      font-weight: 500;
+      font-size: 1.7rem;
+
+
+  }
+
+  .MainContent {
+      background: rgb(10, 10, 10);
+      color: #ddd;
+      text-align: center;
+  }
+
+  .MainContent .container {
+      gap: 6rem
+  }
+
+  .MainContent .Box {
+
+      margin: 0 0 4rem 0;
+
+  }
+
+  .MainContent figure .Box img {
+      transition: 0.5s;
+  }
+
+  .MainContent figure:hover .Box img {
+      transform: scale(1.2);
+
+  }
+
+
+  .MainContent h2 {
+      color: #fff;
+  }
+
+
+  .Premium {
+      background: #000;
+      padding: 10rem 0;
+      text-align: center;
+  }
+
+  .Premium h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 2rem 0;
+      color: #fff;
+  }
+
+  .Premium p {
+
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-align: center;
+      margin: 0 0 4rem 0;
+      color: #ddd;
+  }
+
+  .Premium strong {
+      display: block;
+      margin: 0 0 1rem 0;
+      font-size: 1.4rem;
+
+  }
+
+  .Premium .container {
+      flex-wrap: wrap;
+      gap: 3rem;
+  }
+
+  .Premium .container figure {
+      position: relative;
+      width: calc(50% - 1.5rem);
+
+  }
+
+  .Premium .container figure::before {
+      content: "";
+      position: absolute;
+      width: 15rem;
+      height: 0px;
+      border-top: 2rem solid #ed3124;
+      border-bottom: 2rem solid #ed3124;
+      border-left: 2rem solid #ed3124;
+      border-right: 2rem solid transparent;
+      top: 1rem;
+      left: -2rem;
+      z-index: 999;
+  }
+
+
+  .Premium .container figure::after {
+      content: attr(data-title);
+      position: absolute;
+      top: 2.2rem;
+      left: -0.8rem;
+      z-index: 999;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 300;
+      letter-spacing: 0.1rem;
+  }
+
+  .Premium .container .box {
+      overflow: hidden;
+      margin: 0 0 2rem 0;
+      width: 57rem;
+
+  }
+
+  .Premium .container .dec {
+      width: 55rem;
+  }
+
+  .Premium .container .box img {
+      transition: 0.5s;
+  }
+
+  .Premium .container .box:hover img {
+      transform: scale(1.07);
+  }
+
+  .Premium figure:nth-child(1) {
+      transform: translate(-5rem, 0);
+      opacity: 0;
+      transition: 0.5s;
+  }
+
+  .Premium.on figure:nth-child(1) {
+      transform: translate(0, 0);
+      opacity: 1;
+  }
+
+  .Premium figure:nth-child(2) {
+      transform: translate(0, -5rem);
+      opacity: 0;
+      transition: 0.5s;
+  }
+
+  .Premium.on figure:nth-child(2) {
+      transform: translate(0, 0);
+      opacity: 1;
+      transition: 0.5s 0.5s;
+  }
+
+  .Premium figure:nth-child(3) {
+      transform: translate(0, 5rem);
+      opacity: 0;
+      transition: 0.5s;
+  }
+
+  .Premium.on figure:nth-child(3) {
+      transform: translate(0, 0);
+      opacity: 1;
+      transition: 0.5s 1s;
+  }
+
+  .Premium figure:nth-child(4) {
+      transform: translate(5rem, 0);
+      opacity: 0;
+      transition: 0.5s;
+  }
+
+  .Premium.on figure:nth-child(4) {
+      transform: translate(0, 0);
+      opacity: 1;
+      transition: 0.5s 1.5s;
+  }
+
+  .Footer {
+      background: #111;
+  }
+
+  .Footer .container {
+      justify-content: space-between;
+  }
+
+  .Footer .top {
+      position: relative;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+      line-height: 7rem;
+      color: #333;
+      font-weight: 300;
+
+  }
+
+
+
+  .Footer .top ul li {
+      display: inline-block;
+  }
+
+  .Footer .customer {
+      color: #ddd;
+      font-size: 1.3rem;
+
+  }
+
+  .Footer .customer li~li::before {
+      content: "";
+      display: inline-block;
+      width: 0.4rem;
+      height: 0.4rem;
+      background: #ddd;
+      margin: 0 1.5rem;
+      transform: translate(-0.2rem, -0.4rem);
+
+  }
+
+  .Footer .top span {
+      font-size: 1.8rem;
+  }
+
+  .Footer .pop {
+      color: #ddd;
+  }
+
+  .Footer .pop li {
+      position: relative;
+      padding: 0 3rem 0 0;
+      cursor: pointer;
+  }
+
+
+  .Footer .pop li::before {
+      content: "";
+      position: absolute;
+      right: 0.5rem;
+      top: 50%;
+      transform: translate(1px, -40%);
+      width: 0.2rem;
+      height: 1rem;
+      background: #ed3124;
+  }
+
+  .Footer .pop li::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 1rem;
+      height: 0.2rem;
+      background: #ed3124;
+  }
+
+
+
+
+  .Footer .pop li.on::before {
+      display: none;
+  }
+
+  .Footer .bottom {
+      padding: 3rem 0;
+      line-height: 1.5;
+      color: #aaa;
+      font-weight: 300;
+      font-size: 1.3rem;
+  }
+
+
+
+  .Footer .bottom ul {
+      display: flex;
+      gap: 3rem
+  }
+
+  .Footer .bottom ul>li {
+      position: relative;
+  }
+
+  .Footer .bottom ul>li~li::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 1rem;
+      left: -1.5rem;
+      transform: translate(-50%, -50%);
+      width: 0.2rem;
+      height: 1rem;
+      background: #ed3124;
+  }
+
+  .Footer .bottom .sns i {
+      padding: 1rem;
+      color: #fff;
+      background: #333;
+      border-radius: 50%;
+  }
+
+  .Footer .popup {
+      display: none;
+      position: absolute;
+      top: calc(-7rem - 0.2rem);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ddd;
+      padding: 0 2rem;
+      border: 1px solid #ddd;
+
+  }
+
+  .Footer .top .popup ul {
+      display: flex;
+      gap: 3rem
+  }
+
+  .Footer .popup li {
+      position: relative;
+  }
+
+  .Footer .popup li~li::after {
+      content: "";
+      position: absolute;
+      left: -1.5rem;
+      top: 3rem;
+      transform: translate();
+      width: 0.2rem;
+      height: 1rem;
+      background: #ed3124;
+
+  }
+
+  .Footer .popup.on {
+      display: flex;
+  }
+
+  .Footer .popup i {
+      align-self: center;
+  }
+
+  .Footer .address {
+      width: 120rem;
+      margin: 0 auto;
+      line-height: 2rem;
+  }
+
+  .mopen {
+      display: none;
+  }
+
+  .mbr {
+      display: none;
+  }
+
+  .MainSlider .slick-dots {}
+
+  .xxxxx {}
+
+
+
+
+
+
+
+
+
+
+  /* 여기서 부터 반응형 */
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width:768px) {
+      * {
+          outline: 1px solid --#f00;
+      }
+
+      html {
+          font-size: 10px;
+      }
+
+      body {
+          font-size: 1.6rem;
+          letter-spacing: -0.025rem;
+      }
+
+
+
+      .Wrapper {
+          overflow-x: hidden;
+      }
+
+      .mc {
+          color: #ed3124;
+      }
+
+      .container {
+          display: flex;
+          width: auto;
+          margin: 0 auto;
+          padding: 0 15px;
+      }
+
+      .btn {
+          display: inline-block;
+          border: 1px solid #ddd;
+          padding: 1rem 2rem;
+          color: #ddd;
+          font-size: 1.2rem;
+          transition: 0.5s;
+      }
+
+      .btn:hover {
+          display: inline-block;
+          border: 1px solid #ed3124;
+          padding: 1rem 2rem;
+          color: #ed3124;
+          font-size: 1.2rem;
+      }
+
+      .btn i {
+          font-size: 0.8rem;
+          margin: 0 0 0 1rem;
+      }
+
+      .sec {
+          padding: 10rem 0;
+      }
+
+      .sec h2 {
+
+          font-size: 3rem;
+          font-weight: 700;
+          text-align: center;
+          margin: 0 0 2rem 0;
+
+
+      }
+
+
+      .sec h3 {
+          font-size: 1.5rem;
+          font-weight: 300;
+          text-align: center;
+          margin: 0 0 0.2rem 0;
+      }
+
+      .sec p {
+
+          font-size: 1.5rem;
+          font-weight: 300;
+          text-align: center;
+          margin: 0 0 4rem 0;
+      }
+
+
+      .tit {
+          position: relative;
+          font-size: 1.9rem;
+          font-weight: 700;
+          margin: 0 0 1rem 0;
+          color: #fff;
+
+      }
+
+
+
+      .dec {
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin: 0 0 4rem 0;
+          line-height: 1.5;
+          color: #ddd;
+      }
+
+
+
+      .TopBanner {
+
+          background: #000;
+          color: #ddd;
+
+      }
+
+      .TopBanner.on {
+          display: none;
+      }
+
+      .TopBanner img {
+          transform: translateX(10rem);
+      }
+
+
+      .TopBanner .container {
+          display: block;
+          position: relative;
+      }
+
+      /* .TopBanner h2 {
+       color: #ddd;
+       font-size: 2.5rem;
+       font-weight: 700;
+       margin: 0 0 1rem 0;
+   }
+  
+   .TopBanner p {
+       color: #ddd;
+       font-size: 1.3rem;
+       font-weight: 300;
+   } */
+
+      .TopBanner a {
+          display: inline-block;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          padding: 0.2rem 2rem 0.5rem 2rem;
+          transform: translateY(2rem);
+          margin: 0 0 0 10rem;
+          font-family: 100;
+          font-size: 1.3rem;
+      }
+
+      .TopBanner i {
+          color: #ddd;
+          position: absolute;
+          top: 2rem;
+          right: 1.5rem;
+          cursor: pointer;
+      }
+
+      .h_b {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          z-index: 99;
+          height: 8rem;
+      }
+
+      .Header {
+          color: #fff;
+          line-height: 8rem;
+      }
+
+
+
+      .SubMenu {
+          height: 5rem;
+          font-size: 1.5rem;
+          justify-content: space-between;
+
+
+      }
+
+      .SubMenu ul {
+          font-size: 1.3rem;
+          font-weight: 300;
+          display: flex;
+          gap: 3rem
+      }
+
+      /* 로고가 미세하게 내려오는 것은 폰트사이즈 0을 주면 해결된다. */
+
+      .Gnb {
+          position: fixed;
+          /* 포지션 픽스드를 한다. */
+          left: 0;
+          /* left:0 -> -100%로 바꿔준다. */
+          top: 0;
+          justify-content: flex-start;
+          /*  space-between->flex-start로 바꿔준다.*/
+          height: 100vh;
+          /* 높이를 100vh로 준다. */
+          width: 50vw;
+          /* width: 100%를 준다.  */
+
+          /* 아이폰 크기를 최소로 넣어준다. */
+          display: flex;
+          flex-direction: column;
+          /* flex의 배열을 바꿔준다. */
+          background: #333;
+          color: #fff;
+          line-height: 4rem;
+          /* line-height를 77px에서 40px으로 바꿔준다. */
+          background: rgba(0, 0, 0, 1);
+          transition: 0.5s;
+          z-index: 999;
+          text-align: center;
+
+      }
+
+      .Gnb .container {
+          line-height: ;
+          width: 100%;
+          gap: 3rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 1.9rem;
+          text-shadow: 0 0 0.3rem #000;
+          font-weight: 400;
+
+
+
+      }
+
+      .Gnb .right ul a {}
+
+      .Gnb .right ul {
+          gap: 0rem;
+          transform: translateY(50%);
+          display: block;
+          display: flex;
+          flex-direction: column;
+          line-height: 5rem;
+
+      }
+
+
+
+      .Gnb .right ul>li {
+
+          border-bottom: 1px solid #222;
+      }
+
+      .Gnb .left ul {
+          gap: 0rem;
+          line-height: 5rem;
+          transform: translateY(70%);
+          display: flex;
+          flex-direction: column;
+
+
+
+
+      }
+
+      .Gnb .left ul>li {
+          border-bottom: 1px solid #222;
+      }
+
+      .Gnb .left ul>li:nth-child(3) {
+          display: none;
+      }
+
+      h1 {
+          position: fixed;
+          top: 5rem;
+          left: 0;
+          width: 10rem;
+          font-size: 0;
+          transform: translate(30%, -30%);
+      }
+
+      .Gnb a {
+          display: block;
+      }
+
+
+
+      .Gnb>ul {
+          gap: 3rem;
+          display: flex;
+          flex-direction: column;
+
+      }
+
+      .Gnb>ul>li {
+          position: relative;
+
+      }
+
+      .Gnb>ul>li~li::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: -1.5rem;
+          width: 1px;
+          height: 1.2rem;
+          background: #ddd;
+          transform: translateY(-50%);
+
+      }
+
+      #searchForm {
+          display: none;
+          margin: 0 0 0 2rem
+      }
+
+
+      #searchForm input[name='search'] {
+          border: none;
+          outline: none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          color: #fff;
+          background: transparent;
+          width: 10rem;
+          font-size: 1.5rem;
+          text-shadow: 0 0 0.3rem #000;
+          display: none;
+
+      }
+
+      #searchForm input[name='search']::placeholder {
+          color: #fff;
+          font-size: 1.5rem;
+
+      }
+
+      #searchForm input[name='search']:focus::placeholder {
+          color: transparent
+      }
+
+      #searchForm button {
+          text-shadow: 0 0 0.3rem #000;
+          color: #fff;
+          outline: none;
+          border: none;
+          background: transparent;
+          font-size: 2.3rem;
+          cursor: pointer
+      }
+
+      .MainVisual {
+          position: relative;
+      }
+
+
+      .MainVisual .MainSlider figure {
+          height: 100vh;
+          /* object-fit: cover; */
+
+
+      }
+
+      .movie02 {
+          text-align: center;
+          color: #fff;
+
+      }
+
+      .movie02 i {
+          font-size: 3rem;
+
+      }
+
+      .MainSlider figure {
+          position: relative;
+          height: 100vh;
+      }
+
+      .MainSlider .itm01 {}
+
+      .MainSlider .itm02 {
+          background: url(../img/mainvisual01.jpg) no-repeat center center/cover;
+
+
+      }
+
+      .MainSlider .itm03 {}
+
+
+      .MainSlider .itm04 {
+          background: url(../img/mainvisual.jpg) no-repeat center top/cover;
+
+      }
+
+      .MainVisual .slogan {
+          position: absolute;
+          display: block;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -26%);
+          color: #fff
+      }
+
+
+
+      .MainVisual .slogan h2 {
+          font-size: 8rem;
+          font-weight: 900;
+
+          margin: 0 0 1.2rem 0;
+          text-indent: -0.5rem;
+      }
+
+      .MainVisual .slogan p {
+          font-size: 5rem;
+
+          margin: 0 0 3rem 0;
+          font-weight: 100;
+      }
+
+      .MainVisual .slogan a {
+          font-size: 2.5rem;
+          font-weight: 100;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          padding: 0.5rem 12rem 0.6rem 12rem;
+          border-radius: 30rem;
+
+      }
+
+
+
+      .MainSlider .slick-dots {
+          position: absolute;
+          bottom: 5rem;
+          left: 50%;
+          transform: translateX(-50%);
+
+      }
+
+
+      .MainSlider .slick-dots li {
+          position: relative;
+          display: inline-block;
+          width: 4rem;
+          height: 0.4rem;
+          background: #333;
+          border-radius: 0.2rem;
+          margin: 0 0.2rem;
+          overflow: hidden;
+
+      }
+
+      .MainSlider .slick-dots li::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #ed3124;
+          opacity: 0;
+      }
+
+      .MainSlider .slick-dots li.slick-active::after {
+          opacity: 1;
+          transition: 2s;
+      }
+
+      .MainVisual .slick-dots button {
+          display: none;
+      }
+
+      .MainArrow i {
+          position: absolute;
+          inset: 50% auto auto 50%;
+          transform: translate(-50%, -50%);
+          color: rgba(255, 255, 255, 0.3);
+          font-size: 10rem;
+          transition: 0.5s;
+
+
+      }
+
+      .MainArrow i:hover {
+          position: absolute;
+          inset: 50% auto auto 50%;
+          transform: translate(-50%, -50%);
+          color: rgb(237, 49, 36);
+          font-size: 10rem;
+
+
+      }
+
+      .MainArrow i.on {
+          color: #ddd;
+      }
+
+      .MainArrow i:nth-child(1) {
+          margin: 0 0 0 -80rem;
+
+      }
+
+      .MainArrow i:nth-child(2) {
+          margin: 0 0 0 80rem;
+
+      }
+
+      .controls {
+          position: absolute;
+          bottom: 10rem;
+          left: 50%;
+          transform: translate(-52%, -50%);
+      }
+
+      .somovie {
+          width: 100%;
+          height: 100vh;
+          background: #000;
+          transform: scaleY(1.083);
+      }
+
+
+
+      .Product {
+          background: #000;
+          padding: 10rem 0;
+          color: #fff;
+
+      }
+
+      .Product .Office {}
+
+
+
+      .Product .Office ul {
+          color: #ddd;
+          justify-content: center;
+          display: flex;
+          gap: 3rem;
+          font-weight: 300;
+
+      }
+
+      .Product .Office ul li {
+          position: relative;
+      }
+
+      .Product .Office ul li:nth-child(2)::before {
+          content: "";
+          position: absolute;
+          display: block;
+          top: 0.8rem;
+          left: -1.5rem;
+          transform: translate(-50%, -50%);
+          width: 0.1rem;
+          height: 1rem;
+          background: #bbb;
+      }
+
+
+      .Now {
+          padding: 0 0 6rem 0;
+          position: relative;
+          color: #ddd;
+
+      }
+
+
+
+
+
+      .Now .ProductPic {
+          width: 120rem;
+          margin: 0 auto;
+          gap: 3rem;
+
+
+
+      }
+
+
+
+      .Now .ProductPic .Box {
+          border-radius: 1rem;
+          padding: 10rem 0 4rem 0;
+      }
+
+      .Now .ProductPic figure {
+          position: relative;
+          z-index: 999;
+          padding: 0 3rem;
+          flex: 1;
+
+
+
+
+
+
+      }
+
+      .Now .ProductPic figure img {
+          transform: translateX(0%);
+          border-radius: 1rem;
+          margin: 0 0 1rem 0;
+          transition: 0.5s;
+
+
+      }
+
+
+      .Now .ProductPic figure.slick-center img {
+
+          transform: scale(1.2);
+          transition: transform 0.5s;
+      }
+
+      .Now .ProductPic figure:hover img {
+          transform: scale(1.2);
+          filter: brightness(0.5);
+          cursor: pointer;
+
+      }
+
+
+      .Now .ProductPic figure span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -150%);
+          font-size: 1.7rem;
+          font-weight: 100;
+          opacity: 0;
+          color: #FFF;
+          width: 25rem;
+          letter-spacing: 0.15rem;
+          height: 5rem;
+          cursor: pointer;
+          text-align: center;
+          line-height: 5rem;
+          z-index: 999;
+
+
+      }
+
+
+
+      .Now .ProductPic figure span::after {
+          position: absolute;
+          content: "";
+          width: 18rem;
+          height: 3rem;
+          inset: 50% 0 0 50%;
+          transform: translate(-50%, 3.5rem);
+          background: #fff;
+          /*border: 1px solid #fff;*/
+          opacity: 0.3;
+          border-radius: 3rem;
+
+
+      }
+
+      .Now .ProductPic figure:hover span {
+          opacity: 1;
+          transition: all 0.7s ease;
+
+      }
+
+      .Now .ProductPic .slick-dots {
+          text-align: center;
+          transform: translateY(250%);
+      }
+
+      .Now .ProductPic .slick-dots li {
+          display: inline-block;
+          margin: 0 0.2rem;
+      }
+
+      .Now .ProductPic .slick-dots li button {
+
+          border: none;
+          outline: none;
+          background: #ddd;
+          text-align: center;
+          vertical-align: top;
+          color: #000;
+          border-radius: 50%;
+          width: 2rem;
+          height: 2rem;
+          font-size: 1.2rem;
+          line-height: 1rem;
+
+
+      }
+
+      .Now .ProductPic .slick-dots li.slick-active button {
+          transition: 1s;
+          background: #ed3124
+      }
+
+      .Now .ProductArrows {
+          position: relative
+      }
+
+      .Now .ProductArrows i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          font-size: 3rem;
+          background: #ddd;
+          color: #000;
+          border-radius: 50%;
+          padding: 0.5rem;
+      }
+
+      .Now .ProductArrows i:nth-child(1) {
+          margin: 0 0 0 -54.5rem;
+      }
+
+      .Now .ProductArrows i:nth-child(2) {
+          margin: 0 0 0 54.5rem;
+      }
+
+
+      .Now .ProductPic figure h3 {
+          font-size: 1.9rem;
+          font-weight: 700;
+          text-align: center;
+          line-height: 3rem;
+          letter-spacing: 0.1rem;
+          color: #fff;
+
+      }
+
+      .Now .ProductPic figure p {
+          font-size: 1.1rem;
+          width: 20rem;
+          line-height: 2rem;
+      }
+
+      .Now h4 {
+          font-weight: 300;
+          font-size: 1.5rem;
+          position: relative;
+          text-align: center;
+          margin: 0 0 2rem 0;
+
+
+      }
+
+      .Now h4::after {
+          position: absolute;
+          content: "";
+          width: 27rem;
+          height: 0.3px;
+          inset: 170% 0 0 50%;
+          transform: translate(-50%, -50%);
+          background: #444;
+
+      }
+
+      .Now .Price strong {
+          font-family: xeicon;
+
+      }
+
+      .Now .Price ul {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 0 2rem 0;
+          font-weight: 300;
+          font-size: 1.3rem;
+
+      }
+
+      .Now .Price ul>li:nth-child(2) {
+          font-weight: 500;
+          font-size: 1.7rem;
+
+
+      }
+
+      .MainContent {
+          background: rgb(10, 10, 10);
+          color: #ddd;
+          text-align: center;
+      }
+
+      .MainContent .container {
+          gap: 6rem
+      }
+
+      .MainContent .Box {
+
+          margin: 0 0 4rem 0;
+
+      }
+
+      .MainContent figure .Box img {
+          transition: 0.5s;
+      }
+
+      .MainContent figure:hover .Box img {
+          transform: scale(1.2);
+
+      }
+
+
+      .MainContent h2 {
+          color: #fff;
+      }
+
+
+      .Premium {
+          background: #000;
+          padding: 10rem 0;
+          text-align: center;
+      }
+
+      .Premium h2 {
+          font-size: 3rem;
+          font-weight: 700;
+          text-align: center;
+          margin: 0 0 2rem 0;
+          color: #fff;
+      }
+
+      .Premium p {
+
+          font-size: 1.5rem;
+          font-weight: 300;
+          text-align: center;
+          margin: 0 0 4rem 0;
+          color: #ddd;
+      }
+
+      .Premium strong {
+          display: block;
+          margin: 0 0 1rem 0;
+          font-size: 1.4rem;
+
+      }
+
+      .Premium .container {
+          flex-wrap: wrap;
+          gap: 3rem;
+      }
+
+      .Premium .container figure {
+          position: relative;
+          width: calc(50% - 1.5rem);
+
+      }
+
+      .Premium .container figure::before {
+          content: "";
+          position: absolute;
+          width: 15rem;
+          height: 0px;
+          border-top: 2rem solid #ed3124;
+          border-bottom: 2rem solid #ed3124;
+          border-left: 2rem solid #ed3124;
+          border-right: 2rem solid transparent;
+          top: 1rem;
+          left: -2rem;
+          z-index: 999;
+      }
+
+
+      .Premium .container figure::after {
+          content: attr(data-title);
+          position: absolute;
+          top: 2.2rem;
+          left: -0.8rem;
+          z-index: 999;
+          color: #fff;
+          font-size: 1.3rem;
+          font-weight: 300;
+          letter-spacing: 0.1rem;
+      }
+
+      .Premium .container .box {
+          overflow: hidden;
+          margin: 0 0 2rem 0;
+          width: 57rem;
+
+      }
+
+      .Premium .container .dec {
+          width: 55rem;
+      }
+
+      .Premium .container .box img {
+          transition: 0.5s;
+      }
+
+      .Premium .container .box:hover img {
+          transform: scale(1.07);
+      }
+
+      .Premium figure:nth-child(1) {
+          transform: translate(-5rem, 0);
+          opacity: 0;
+          transition: 0.5s;
+      }
+
+      .Premium.on figure:nth-child(1) {
+          transform: translate(0, 0);
+          opacity: 1;
+      }
+
+      .Premium figure:nth-child(2) {
+          transform: translate(0, -5rem);
+          opacity: 0;
+          transition: 0.5s;
+      }
+
+      .Premium.on figure:nth-child(2) {
+          transform: translate(0, 0);
+          opacity: 1;
+          transition: 0.5s 0.5s;
+      }
+
+      .Premium figure:nth-child(3) {
+          transform: translate(0, 5rem);
+          opacity: 0;
+          transition: 0.5s;
+      }
+
+      .Premium.on figure:nth-child(3) {
+          transform: translate(0, 0);
+          opacity: 1;
+          transition: 0.5s 1s;
+      }
+
+      .Premium figure:nth-child(4) {
+          transform: translate(5rem, 0);
+          opacity: 0;
+          transition: 0.5s;
+      }
+
+      .Premium.on figure:nth-child(4) {
+          transform: translate(0, 0);
+          opacity: 1;
+          transition: 0.5s 1.5s;
+      }
+
+      .Footer {
+          background: #111;
+      }
+
+      .Footer .container {
+          justify-content: space-between;
+      }
+
+      .Footer .top {
+          position: relative;
+          border-top: 1px solid #333;
+          border-bottom: 1px solid #333;
+          line-height: 7rem;
+          color: #333;
+          font-weight: 300;
+
+      }
+
+
+
+      .Footer .top ul li {
+          display: inline-block;
+      }
+
+      .Footer .customer {
+          color: #ddd;
+          font-size: 1.3rem;
+
+      }
+
+      .Footer .customer li~li::before {
+          content: "";
+          display: inline-block;
+          width: 0.4rem;
+          height: 0.4rem;
+          background: #ddd;
+          margin: 0 1.5rem;
+          transform: translate(-0.2rem, -0.4rem);
+
+      }
+
+      .Footer .top span {
+          font-size: 1.8rem;
+      }
+
+      .Footer .pop {
+          color: #ddd;
+      }
+
+      .Footer .pop li {
+          position: relative;
+          padding: 0 3rem 0 0;
+          cursor: pointer;
+      }
+
+
+      .Footer .pop li::before {
+          content: "";
+          position: absolute;
+          right: 0.5rem;
+          top: 50%;
+          transform: translate(1px, -40%);
+          width: 0.2rem;
+          height: 1rem;
+          background: #ed3124;
+      }
+
+      .Footer .pop li::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 1rem;
+          height: 0.2rem;
+          background: #ed3124;
+      }
+
+
+
+
+      .Footer .pop li.on::before {
+          display: none;
+      }
+
+      .Footer .bottom {
+          padding: 3rem 0;
+          line-height: 1.5;
+          color: #aaa;
+          font-weight: 300;
+          font-size: 1.3rem;
+      }
+
+
+
+      .Footer .bottom ul {
+          display: flex;
+          gap: 3rem
+      }
+
+      .Footer .bottom ul>li {
+          position: relative;
+      }
+
+      .Footer .bottom ul>li~li::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 1rem;
+          left: -1.5rem;
+          transform: translate(-50%, -50%);
+          width: 0.2rem;
+          height: 1rem;
+          background: #ed3124;
+      }
+
+      .Footer .bottom .sns i {
+          padding: 1rem;
+          color: #fff;
+          background: #333;
+          border-radius: 50%;
+      }
+
+      .Footer .popup {
+          display: none;
+          position: absolute;
+          top: calc(-7rem - 0.2rem);
+          left: 50%;
+          transform: translateX(-50%);
+          background: #ddd;
+          padding: 0 2rem;
+          border: 1px solid #ddd;
+
+      }
+
+      .Footer .top .popup ul {
+          display: flex;
+          gap: 3rem
+      }
+
+      .Footer .popup li {
+          position: relative;
+      }
+
+      .Footer .popup li~li::after {
+          content: "";
+          position: absolute;
+          left: -1.5rem;
+          top: 3rem;
+          transform: translate();
+          width: 0.2rem;
+          height: 1rem;
+          background: #ed3124;
+
+      }
+
+      .Footer .popup.on {
+          display: flex;
+      }
+
+      .Footer .popup i {
+          align-self: center;
+      }
+
+      .Footer .address {
+          width: 120rem;
+          margin: 0 auto;
+          line-height: 2rem;
+      }
+
+      .mopen {
+          display: block;
+          position: fixed;
+          top: 30px;
+          right: 30px;
+          z-index: 999;
+          font-size: 0;
+          width: 30px;
+          height: 30px;
+          background: #ddd;
+      }
+
+      .mopen button {
+          border: none;
+          outline: none;
+          background: transparent;
+      }
+
+      .mopen::before {
+          top: 7px
+      }
+
+      .mopen::after,
+      .mopen::before {
+
+          content: "";
+          position: absolute;
+          left: 5px;
+          right: 5px;
+          height: 2px;
+          background: #333;
+      }
+
+      .mopen::after {
+          bottom: 7px;
+      }
+
+
+      .mopen button::before,
+      .mopen button::after {
+
+          content: "";
+          position: absolute;
+          left: 5px;
+          right: 5px;
+          height: 2px;
+          background: #333;
+          top: calc(50% - 1px);
+      }
+
+      .mopen.on::before,
+      .mopen.on::after {
+          opacity: 0;
+      }
+
+      .mopen.on button::before {
+          transform: rotate(45deg);
+      }
+
+      .mopen.on button::after {
+          transform: rotate(-45deg);
+      }
+
+      .mbr {
+          display: none;
+      }
+  }

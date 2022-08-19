@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV</title>
+    <meta name="description" content="rem사용, jquery사용..." />
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/main.css?ver=1.0">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/main.js?ver=1.0"></script>
+</head>
+
+<body>
+    <!-- Tcc 파스칼케이스
+    tCc 카멜케이스
+T_cc 스네이크 케이스
+t-cc 케밥케이스
+ -->
+    <div class="Wrapper">
+        <div class="h_b">
+            <div class="TopBanner">
+                <div class="container">
+                    <img src=".//img/TopBanner01.jpg" alt="">
+                    <a href="">more</a>
+                    <i class="xi-close"></i>
+                </div>
+            </div>
+
+            <header class="Header">
+                <div class="SubMenu container">
+                    <div class="right">
+                        <ul>
+
+                            <li><a href="">MY CGV</a></li>
+                            <li><a href="">고객센터</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="left">
+                        <ul>
+                            <li><a href="">로그인</a></li>
+                            <li><a href="">회원가입</a></li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+                <nav class="Gnb">
+                    <div class="container">
+                        <div class="right">
+                            <ul>
+                                <li><a href="">영화 </a></li>
+                                <li><a href="">예매</a></li>
+                                <li><a href="">극장</a></li>
+                                <li><a href="">스토어</a></li>
+                            </ul>
+                        </div>
+                        <h1>
+                            <a href="">
+                                <img src="./img/logoRed.png" alt="">
+                            </a>
+                        </h1>
+                        <div class="left">
+                            <ul>
+                                <li><a href="">이벤트</a></li>
+                                <li><a href="">혜택</a></li>
+                                <li>
+                                    <form id="searchForm" action="html">
+                                        <input type='text' name="search" placeholder="" required>
+                                        <button><i class="xi-search"></i></button>
+                                    </form>
+                                </li>
+                            </ul>
+
+                        </div>
+                </nav>
+
+                <div class="mopen">
+                    <button>mobile btn</button>
+                </div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <section class="MainVisual">
+            <div class="MainSlider">
+                <figure class="itm01 movie02">
+                    <div class="movie_play01 somovie">
+                        <div class="controls">
+                            <i class="xi-pause"></i>
+                            <i class="xi-play"></i>
+                            <i class="xi-volume-off"></i>
+                        </div>
+                    </div>
+                    <div id="bgndVideo" class="player">
+                    </div>
+                </figure>
+
+                <figure class="itm02">
+                    <div class="slogan container">
+                        <h2>미니언즈2</h2>
+                        <p>7월 20일 대개봉</p>
+                        <a href="">예매하기</a>
+                    </div>
+                </figure>
+
+                <figure class="itm03 movie02">
+                    <div class="movie_play02 somovie">
+                        <div class="controls">
+                            <i class="xi-pause"></i>
+                            <i class="xi-play"></i>
+                            <i class="xi-volume-off"></i>
+                        </div>
+                    </div>
+                    <div id="bgndVideo02" class="player">
+                    </div>
+                </figure>
+                <figure class="itm04">
+                    <div class="slogan container">
+                        <h2>범죄도시2</h2>
+                        <p>5월 18일 대개봉</p>
+                        <a href="">예매하기</a>
+                    </div>
+                </figure>
+            </div>
+            <div class="MainArrow">
+                <i class="xi-angle-left-thin"></i>
+                <i class="xi-angle-right-thin"></i>
+            </div>
+        </section>
+
+
+
+        <section class="Product sec">
+
+
+            <h2>박스오피스</h2>
+            <div class="Office">
+                <ul>
+                    <li><a href="">현재 상영작</a></li>
+                    <li><a href="">개봉 예정작</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="Now">
+                <div class="ProductPic">
+                    <figure>
+                        <div class="Box">
+                            <img src="./img/82120_320.jpg" alt="">
+                        </div>
+                        <div class="Inner">
+                            <span>개봉: 2022. 06. 22<br />
+                                예매하기</span>
+
+                            <h3>탑건: 매버릭</h3>
+                            <h4>장르: 액션, 130분</h4>
+                            <div class="Price">
+                                <ul>
+                                    <li><strong></strong> 9.8</li>
+
+                                    <li>예매율 27%</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </figure>
+
+
+                    <figure>
+                        <div class="Box"><img src="./img/86046_320.jpg"></div>
+                        <div class="Inner">
+                            <span>개봉: 2022. 08. 10 <br />
+                                예매하기</span>
+                            <h3>리그 오브 슈퍼-펫</h3>
+                            <h4>장르: 애니메이션, 105분</h4>
+                            <div class="Price">
+                                <ul>
+                                    <li><strong></strong> 9.5</li>
+
+                                    <li>예매율 8%</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="Box"><img src="./img/83280_320.jpg" alt=""></div>
+                        <div class="Inner">
+                            <span>개봉: 2022. 07. 27 <br />
+                                예매하기</span>
+                            <h3>한산: 용의 출현</h3>
+                            <h4>
+                                장르: 액션, 129분</h4>
+                            <div class="Price">
+                                <ul>
+                                    <li><strong></strong> 9.6</li>
+
+                                    <li>예매율 13%</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </figure>
+
+                    <figure>
+                        <div class="Box"><img src="./img/83805_320.jpg" alt=""></div>
+                        <div class="Inner">
+                            <span>개봉: 2022. 08. 11 <br />
+                                예매하기</span>
+                            <h3>뱅크시</h3>
+                            <h4>
+                                장르: 다큐멘터리, 112분</h4>
+                            <div class="Price">
+                                <ul>
+                                    <li><strong></strong> 9.7</li>
+
+                                    <li>예매율 5%</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="Box"><img src="./img/85465_320.jpg" alt=""></div>
+                        <div class="Inner">
+                            <span>개봉: 2022. 08. 03 <br />
+                                예매하기</span>
+                            <h3>비상선언</h3>
+                            <h4>
+                                장르: 드라마, 140분</h4>
+                            <div class="Price">
+                                <ul>
+                                    <li><strong></strong> 9.1</li>
+
+                                    <li>예매율 12%</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="Box"><img src="./img/85722_320.jpg" alt=""></div>
+                        <div class="Inner">
+                            <span>개봉: 2022. 08. 17 <br />
+                                예매하기</span>
+                            <h3>놉</h3>
+                            <h4>
+                                장르: 미스터리, 130분</h4>
+                            <div class="Price">
+                                <ul>
+                                    <li><strong></strong> 9.8</li>
+
+                                    <li>예매율 23%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure>
+                        <div class="Box"><img src="./img/85852_320.jpg" alt=""></div>
+                        <div class="Inner">
+                            <span>개봉: 2022. 06. 29 <br />
+                                예매하기</span>
+                            <h3>헤어질 결심</h3>
+                            <h4>
+                                장르: 멜로, 138분</h4>
+                            <div class="Price">
+                                <ul>
+                                    <li><strong></strong> 9.7</li>
+
+                                    <li>예매율 12%</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="ProductArrows">
+                    <i class="xi-arrow-left"></i>
+                    <i class="xi-arrow-right"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="MainContent sec">
+            <h2>극장 이용 안내</h2>
+            <p>한 눈에 보는 CGV 이용 가이드
+
+            </p>
+            <div class="container">
+
+                <figure>
+                    <div class="Box">
+                        <img src="./img/guide01.png" alt="">
+
+                    </div>
+                    <div class="tit">기프트카드</div>
+                    <div class="dec">
+                        CGV 기프트카드 , 센스있는 선물의 정석
+                    </div>
+                    <a href="#!" class="btn">자세히보기 <i class="xi-angle-right"></i></a>
+                </figure>
+                <figure>
+                    <div class="Box">
+                        <img src="./img/guide02.png" alt="">
+
+                    </div>
+                    <div class="tit">콤보</div>
+                    <div class="dec">
+                        CGV 콤보 , 아는 맛이 제일 맛있어요
+                    </div>
+                    <a href="#!" class="btn">자세히보기 <i class="xi-angle-right"></i></a>
+                </figure>
+                <figure>
+                    <div class="Box">
+                        <img src="./img/guide03.png" alt="">
+
+                    </div>
+                    <div class="tit">영화관람권</div>
+                    <div class="dec">
+                        CGV 영화관람권 , 모두에게 즐거운 경험
+                    </div>
+                    <a href="#!" class="btn">자세히보기 <i class="xi-angle-right"></i></a>
+                </figure>
+
+            </div>
+        </section>
+
+        <section class="Premium active-event">
+            <h2>특별관</h2>
+            <p>CGV만의 특별함이 있는 영화관을 소개합니다. </p>
+
+            <div class="container">
+                <figure class="itm" data-title="Prestige">
+                    <a href="#!">
+                        <div class="box">
+                            <img src="./img/premium01.png" alt="">
+                        </div>
+
+                        <div class="dec">집보다 더 프라이빗하게 , 호텔보다 더 프리미엄하게 ! Suite Cinema !</div>
+                    </a>
+
+                </figure>
+                <figure class="itm" data-title="Concept">
+                    <a href="#!">
+                        <div class="box">
+                            <img src="./img/premium02.png" alt="">
+                        </div>
+                        <div class="dec">내 집 같이 편안하고 세련된 무드와 감성을 담은 신개념 소셜 상영관입니다.</div>
+                    </a>
+                </figure>
+                <figure class="itm" data-title="Technology">
+                    <a href="#!">
+                        <div class="box">
+                            <img src="./img/premium03.png" alt="">
+                        </div>
+                        <div class="dec"> 4DX 상영관은 영화의 장면에 맞추어 움직이는 모션시트와 더불어
+                            다양한 <br />환경 효과를 느낄 수 있는 오감 만족 체험 상영관입니다.
+                        </div>
+                    </a>
+                </figure>
+                <figure class="itm" data-title="Prestige">
+                    <a href="#!">
+                        <div class="box">
+                            <img src="./img/premium04.png" alt="">
+                        </div>
+                        <div class="dec"> 미국의 신문왕 윌리엄 랜돌프 허스트는 소중한 손님을 모실 때, 개인 전용 영화관에서<br /> 쉐프들이 준비하는 만찬과 함께 영화의 즐거움을
+                            나누었다고 합니다.
+                        </div>
+                    </a>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="Footer">
+        <div class="top">
+            <div class="container popup">
+                <ul>
+                    <li><a href="">CJ 그룹</a></li>
+                    <li><a href="">식품 & 서비스</a></li>
+                    <li><a href="">생명공학</a></li>
+                    <li><a href="">물류 & 신유통</a></li>
+                    <li><a href="">엔터테인먼트 & 미디어</a></li>
+                </ul>
+                <i class="xi-close"></i>
+            </div>
+            <div class="container">
+                <ul class="customer">
+                    <li><a href="" class="mc">개인정보처리방침</a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">채용정보</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">법적고지</a></li>
+                    <li><a href="">편성기준</a></li>
+                    <li><a href="">윤리경영</a></li>
+                    <li><a href="">광고 및 제휴</a></li>
+                    <li><a href="">사이버감사실</a></li>
+                    <li><a href="">이메일주소무단수집거부</a></li>
+
+                </ul>
+                <ul class="pop">
+                    <li> 계열사 바로가기</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+
+                <ul>
+                    <li>대표이사: 허민회 </li>
+                    <li>사업자등록번호: 104-81-45690</li>
+                    <li>통신판매업신고번호: 2017-서울용산-0662</li>
+                    <li>개인정보보호 책임자: 심준범</li>
+                    <li>대표이메일: cjcgvmaster@cj.net</li>
+                </ul>
+                <div class="sns">
+                    <a href=""><i class="xi-instagram"></i></a>
+                    <a href=""><i class="xi-youtube-play"></i></a>
+                    <a href=""><i class="xi-facebook"></i></a>
+                </div>
+            </div>
+            <div class="address">
+                <address> (04377) 서울특별시 용산구 한강대로 23길 55, 아이파크몰
+                    6층(한강로동)</address>
+
+                &copy; CJ CGV. All Rights Reserved<br class="mbr" />
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
