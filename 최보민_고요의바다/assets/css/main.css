@@ -1,0 +1,764 @@
+body {
+    letter-spacing: -0.025em;
+}
+
+/*  */
+
+
+/*  */
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #aaa;
+
+}
+
+.txt strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.txt h2 {
+    margin: 0 0 20px 0;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+
+}
+
+.txt p {
+    margin: 0 0 40px 0;
+    font-size: 15px;
+    line-height: 1.45;
+
+}
+
+.txt a {
+    display: inline-block;
+    padding: 10px 50px;
+    background: #333;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.iconHr {
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-bottom: 1px solid #444;
+    width: 1600px;
+    overflow: visible;
+}
+
+.iconHr::after {
+    content: "\eb0f";
+    font-family: xeicon;
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    background: #fff;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+
+}
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    line-height: 100px;
+    z-index: 999;
+    transition: top 0.5s;
+}
+
+h1 {
+    width: 200px;
+    font-size: 0;
+    transform: translateY(22%);
+}
+
+.Header.on {
+    top: -100px;
+}
+
+.Header .Gnb ul {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.mainVisual {
+    background: url(../img/main.jpg) no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.mainVisual strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    font-weight: 300;
+    transform: translate(5px, -50px);
+    letter-spacing: 15px;
+    color: #ddd;
+
+}
+
+.mainVisual h2 {
+    display: block;
+    margin: 0 0 0 0;
+    font-size: 85px;
+    font-weight: 900;
+    transform: translateY(-50px);
+    opacity: 1;
+
+
+}
+
+.mainVisual p {
+    display: block;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #ddd;
+
+}
+
+
+.mainVisual .wheel {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 60px;
+    border: 3px solid rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    font-size: 0;
+
+}
+
+.mainVisual .wheel::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.75);
+    animation: wheel 0.5s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 15px;
+
+    }
+}
+
+.crewSlider h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.crewSlider p {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    color: #a3a3a3;
+}
+
+.crewSlider {
+    text-align: center;
+    background: #000;
+}
+
+.crewSlider .slide_menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    line-height: 50px;
+    font-size: 0;
+}
+
+.crewSlider .slide_menu p {
+    font-size: 17px;
+    color: #a3a3a3;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.crewSlider .slide_menu li {
+    position: relative;
+}
+
+
+.crewSlider .slide_menu li.on p {
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.crewSlider p {
+
+    margin: 0 0 30px 0;
+}
+
+.crewSlider .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.crewSlider .container>div {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+.crewSlider .container .left {
+    height: 500px;
+    background: #f00;
+}
+
+.crewSlider .container .top {
+    height: 250px;
+    background: #ff0;
+}
+
+.crewSlider .container .bottom {
+    height: 250px;
+    background: rgba(10, 10, 10)
+}
+
+.crewSlider .basicSlider figure {
+    position: relative;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.crewSlider .left_slider .sl {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+}
+
+.crewSlider .left_slider .sl h3 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.crewSlider .left_slider .sl p {
+    text-align: center;
+    color: #ddd;
+    font-size: 19px;
+}
+
+.crewSlider .left_slider figure {
+    height: 500px;
+}
+
+.crewSlider .left .itm01 {
+    background-image: url(../img/crew01.jpg)
+}
+
+.crewSlider .left .itm02 {
+    background-image: url(../img/crew02.jpg)
+}
+
+.crewSlider .left .itm03 {
+    background-image: url(../img/crew03.jpg)
+}
+
+
+
+
+
+.crewSlider .top .itm01 {
+    background-image: url(../img/crew01s.jpg)
+}
+
+.crewSlider .top .itm02 {
+    background-image: url(../img/crew02s.jpg)
+}
+
+.crewSlider .top .itm03 {
+    background-image: url(../img/crew03s.jpg)
+}
+
+.crewSlider .bottom_slider .sl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.crewSlider .bottom_slider .sl h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.crewSlider .bottom_slider .sl h3 {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.crewSlider .bottom_slider .sl p {
+    text-align: start;
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 30px 0 30px;
+    text-indent: 1rem
+}
+
+.crewSlider .bottom .itm01 {
+    background-image: url(./assets/images/main_story_v0103.png)
+}
+
+.crewSlider .bottom .itm02 {
+    background-image: url(./assets/images/main_story_v0203.png)
+}
+
+.crewSlider .bottom .itm03 {
+    background-image: url(./assets/images/main_story_v0303.png)
+}
+
+.crewSlider .bottom .itm04 {
+    background-image: url(./assets/images/main_story_v0403.png)
+}
+
+.Basic .container {
+    display: flex;
+    gap: 50px;
+    overflow: hidden;
+
+}
+
+.Basic .container>div {
+    flex: 1;
+}
+
+.Basic .left {
+    transform: translate(100px, 200px);
+    opacity: 0;
+}
+
+.Basic.on .left {
+    transform: translate(100px, 0);
+    opacity: 1;
+    transition: 0.5s 0.5s;
+}
+
+.Basic .right {
+
+    opacity: 0;
+}
+
+.Basic.on .right {
+
+    opacity: 1;
+    transition: 0.5s 1s;
+}
+
+.Infor .container {
+    display: flex;
+    gap: 100px;
+
+}
+
+.Infor .container>div {
+    flex: 1;
+}
+
+.Infor .right {
+    order: -1
+}
+
+.Infor .txt {
+    height: 700px;
+    position: relative;
+    width: 1200px;
+}
+
+.Infor .txt strong::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    width: 530px;
+    height: 530px;
+    transform: translate(-100px, -145px);
+    border-radius: 50%;
+}
+
+.Infor .txt strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: 100;
+    font-size: 0;
+
+
+}
+
+.Infor .txt h2 {
+    margin: 0 0 20px 0;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+
+}
+
+.Infor .txt p {
+    margin: 0 0 40px 0;
+    font-size: 15px;
+    line-height: 1.45;
+    z-index: 1;
+
+}
+
+
+.Infor .txt a {
+    display: inline-block;
+    padding: 10px 50px;
+    background: #333;
+    color: #fff;
+    align-self: flex-start;
+    z-index: 1;
+}
+
+.Synop {
+    background: #000;
+}
+
+.Infor {
+    background: #000 url(../img/story_bg.jpg) no-repeat center center/cover;
+}
+
+.Picture {
+    background: #000;
+}
+
+.Picture img {
+    width: 100%
+}
+
+.Picture .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Picture .container>* {
+    position: relative;
+    float: left;
+    width: 20%;
+    overflow: hidden;
+}
+
+.Picture .container .tit {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 1.2;
+    text-align: center;
+    transform: translateY(100px);
+    color: #fff
+}
+
+.Picture .container .tit strong {
+    font-size: 39px;
+    font-weight: 100;
+    line-height: 1.2;
+    text-align: center;
+    transform: translateY(100px);
+    color: #aaa
+}
+
+.Picture .container .tit i {
+    font-size: 44px;
+    transform: translateY(2px);
+    color: #fff
+}
+
+.Picture .container .tit span {
+    display: block;
+
+}
+
+.Picture .container figure:hover .link {
+    top: 0;
+}
+
+.Picture .container .box {
+    height: 318px;
+    overflow: hidden;
+}
+
+.Picture .container .link {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.Picture .container .link i {
+    margin: 0 5px;
+}
+
+.Footer {
+    padding: 0 0 50px 0;
+    background: #111
+}
+
+.Footer .top {
+    line-height: 100px;
+    border-bottom: 1px solid #aaa;
+    color: #ddd;
+    margin: 0 0 30px 0;
+}
+
+.Footer .top i {
+    font-size: 25px;
+    transform: translateY(2px);
+}
+
+.Footer .top ul {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+.Footer .top ul li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background: #aaa;
+    margin: 0 10px;
+}
+
+.Footer a {
+    display: inline-block;
+}
+
+.Footer .bottom {
+    color: #888;
+}
+
+.Footer .bottom ul {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 0 0 20px 0;
+
+}
+
+.Footer .bottom ul li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #aaa;
+    margin: 0 10px;
+}
+
+.Footer address {
+    text-align: center;
+    font-size: 13px;
+    margin: 20px 0 0 0;
+
+}
+
+.navBar {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.navBar li {
+    width: 50px;
+}
+
+.navBar li a {
+    position: relative;
+    display: block;
+    font-size: 0;
+    height: 15px;
+}
+
+
+.navBar li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30%;
+    height: 1px;
+    background: #ddd;
+    transition: 0.5s;
+}
+
+.navBar li.on a::after {
+    width: 100%;
+}
+
+.this_page {
+    position: absolute;
+    right: 0;
+    top: -100px;
+    text-align: right;
+    white-space: nowrap;
+    color: #ddd;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.allOpen {
+    position: relative;
+    display: block;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.allOpen button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.allOpen::before,
+.allOpen::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    height: 4px;
+    background: #fff;
+}
+
+.allOpen::before {
+    top: 7px;
+}
+
+.allOpen::after {
+    bottom: 7px;
+}
+
+.allOpen button::before,
+.allOpen button::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    height: 4px;
+    background: #fff;
+    top: calc(50% - 2px);
+}
+
+.allOpen.on::before,
+.allOpen.on::after {
+    opacity: 0;
+}
+
+.allOpen.on button::before {
+    transform: rotate(45deg);
+}
+
+.allOpen.on button::after {
+    transform: rotate(-45deg);
+}
+
+.cover {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+
+}
+
+.cover.on {
+    display: flex;
+}
+
+.cover ul {
+    display: flex;
+    gap: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.cover ul li {
+    position: relative;
+    text-align: center;
+}
+
+.cover ul li::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.cover ul li:hover::after {
+    width: 100%;
+}
