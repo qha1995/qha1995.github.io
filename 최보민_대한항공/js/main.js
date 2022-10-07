@@ -36,9 +36,10 @@ $(function () {
     })
 
     //메인 슬라이드
+
     var mainSlider = $(".visual-slider").slick({
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         pauseOnHover: false,
         pauseOnFocus: false,
@@ -56,7 +57,8 @@ $(function () {
         var txt = Atxt.text().split("");
 
         $.each(txt, function (idx) {
-            Atxt.append("<span>" + txt[idx]);
+            if ($(window).width() > 768)
+                Atxt.append("<span>" + txt[idx]);
             Atxt.find("span").css({ position: "relative", opacity: 0, left: 100, fontSize: "60px" })
                 .delay(300 * idx)
                 .animate({ opacity: 1, left: 0 }, 500)
@@ -168,6 +170,29 @@ $(function () {
     });
     $('.nemo .productArrows i:nth-child(2)::after ').on('click', function () {
         $('.news .container').slick('slickNext')
+    });
+
+
+    const SCE_ELE = document.querySelectorAll('.active-event')
+
+    window.addEventListener('scroll', () => {
+        let sct = window.scrollY;
+        SCE_ELE.forEach(el => {
+            //forEach = 배열
+            sct > el.offsetTop - 300
+                ? el.classList.add('on')
+                : el.classList.remove('on')
+
+        })
+
+    });
+
+
+    document.querySelector('.mopen').addEventListener('click', (e) => {
+        const TG = e.currentTarget;
+        // 값이 바뀌는 건 let을 씀.
+        TG.classList.toggle('on');
+        document.querySelector('#header').classList.toggle('ox')
     });
 })
 
