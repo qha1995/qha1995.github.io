@@ -1430,18 +1430,18 @@ body {
         width: 100%;
         box-sizing: border-box;
         z-index: 999;
-        padding: 10px 30px;
+        padding: 1rem 3rem;
         justify-content: flex-start;
         height: 100vh;
         width: 100%;
-        min-width: 320px;
+        min-width: 32rem;
         display: flex;
         flex-direction: column;
         color: #fff;
-        line-height: 40px;
+        line-height: 4rem;
         transition: 0.5s;
         z-index: 999;
-        background: rgba(0, 0, 0, 0.5);
+        background: #333;
 
     }
 
@@ -1467,8 +1467,7 @@ body {
 
     #header .top>ul {
         display: flex;
-        gap: 2rem;
-        width: 20rem;
+        gap: 1.5rem;
         line-height: 5rem;
 
 
@@ -1490,8 +1489,8 @@ body {
         font-size: 3.5vw;
         font-weight: 300;
         color: #ddd;
-        width: 45rem;
-        margin: 0 -7rem 0 auto;
+        width: 100%;
+        margin: 0 0 0 0;
         transform: translateY(10vh);
 
 
@@ -1509,7 +1508,8 @@ body {
     .gnb {
         position: relative;
         border-bottom: 0px solid rgba(255, 255, 255, 0.3);
-        margin-top: 100px;
+        margin-top: 7rem;
+
 
 
 
@@ -1520,8 +1520,9 @@ body {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+        width: 100%;
 
-        width: 155.5rem;
+
 
     }
 
@@ -1529,22 +1530,21 @@ body {
 
         display: flex;
         gap: 0;
-        margin: 0 auto;
-        text-align: center;
         font-weight: 500;
-        font-size: 1.7rem;
-        font-weight: 400;
+        font-size: 1.5rem;
         color: #fff;
-        margin: 0 0 0 0;
+        line-height: 5rem;
         flex-direction: column;
+        width: 100%;
+        padding: 0 1.5rem;
 
 
     }
 
     .gnb .box>ul>li {
         position: relative;
-
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        text-align: left;
 
 
         /*border-right: 1px solid #ddd;*/
@@ -1561,18 +1561,17 @@ body {
 
     #header .box>ul>li:hover .smenu {
         display: block;
+
     }
 
+
     #header .gnb .smenu {
-        position: absolute;
-        top: 5rem;
-        left: 50%;
+        position: static;
         display: none;
-        transform: translateX(-50%);
+        transform: translateX(0%);
         border-top: 0.3rem solid #00256c;
         background: rgb(0, 0, 0, 0.3);
-        line-height: 3.5rem;
-        width: 15rem;
+        width: 100%;
         z-index: 999;
         text-align: center;
         font-size: 1.5rem;
@@ -1584,7 +1583,8 @@ body {
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0.5rem 0;
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
     }
 
 
@@ -1741,7 +1741,7 @@ body {
     #main-visual p {
         text-indent: 0;
         font-size: 4vw;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 4.5vw;
         text-align: center;
         margin: 0 0 0 0;
@@ -2814,16 +2814,17 @@ body {
     #footer .container {
         justify-content: space-between;
         display: flex;
-
+        gap: 0.5rem
     }
 
 
     #footer .bottom .container {
-        flex-direction: column;
+        margin: 0 0 1rem 0;
     }
 
     #footer .bottom img {
         width: 19rem;
+
 
     }
 
@@ -2841,8 +2842,9 @@ body {
         text-transform: uppercase;
         background: transparent;
         color: #ddd;
-        padding: 0.5rem 1.5rem;
-        border: 1px solid #666
+        padding: 0.5rem 0.5rem;
+        border: 1px solid #666;
+
     }
 
     #footer .bottom option {
@@ -2852,21 +2854,23 @@ body {
 
     #footer #family_link {
         font-size: 1.3rem;
+
     }
 
 
     #footer .address dl {
         display: flex;
         width: 100%;
-        line-height: 2.5rem;
+        line-height: 2.3rem;
         flex-direction: column;
-        text-align: center;
+        padding: 0 3rem;
+
 
 
     }
 
     #footer .address dl dd~dd {
-        margin: 0 1rem;
+        margin: 0 0 0 0;
 
     }
 
@@ -2881,6 +2885,8 @@ body {
         width: 3rem;
         height: 3rem;
         background: #eee;
+        border-radius: 0.3rem;
+
     }
 
     .mopen button {

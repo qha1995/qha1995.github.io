@@ -1,15 +1,19 @@
+//gnb 
+
+$('.mopen').on('click', function () {
+    $('.gnb').toggleClass('on')
+});
+
+
 $(function () {
     $('.gnb .box>ul>li>a').on('click', function (e) {
         if ($('.gnb').hasClass('on')) {
             e.preventDefault();
-            $('.smenu').slideUp()
+            $('.smenu').stop().slideUp();
             $(this).next().stop().slideToggle();
         }
     });
 
-    $('.mbtn').on('click', function () {
-        $('.gnb').toggleClass('on')
-    });
 
     $(window).on('resize', function () {
         $('.gnb').removeClass('on');
@@ -34,6 +38,8 @@ $(function () {
     $('.sitemap .xi-close').on('click', function () {
         $('.sitemap').hide()
     })
+
+
 
     //메인 슬라이드
 
