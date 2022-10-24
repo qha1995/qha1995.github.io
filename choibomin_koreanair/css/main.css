@@ -1560,7 +1560,7 @@ body {
 
 
     #header .box>ul>li:hover .smenu {
-        display: block;
+        display: none;
 
     }
 
